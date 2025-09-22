@@ -1,0 +1,15 @@
+header {
+    background-color: #2F303A ;
+}
+body {
+    background-color: white ;
+}
+h2 + button {
+    background-color: #2196F3;
+    section + section {
+        background-color: #F5F4FA;
+    }
+}
+footer {
+    background-color: #2F303A;
+}
