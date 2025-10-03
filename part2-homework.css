@@ -1,0 +1,75 @@
+nav a {
+    color: rgb(163, 244, 137);
+}
+
+a:hover {
+    color: rgb(255, 134, 255);
+}
+
+h1 {
+    color: rgb(255, 93, 206);
+}
+
+#schedule {
+    background-color: rgb(185, 188, 255);
+    box-shadow: 2px 3px 15px 10px rgb(136, 78, 199);
+}
+
+ul li {
+    color: blueviolet;
+}
+
+.Monday h2 {
+    color: rgb(228, 255, 132);
+    font-size: 29px;
+    
+}
+
+.Monday p:nth-child(even) {
+    color: rgb(65, 153, 62);
+}
+
+.Tuesday h2 {
+    color: rgb(228, 255, 132);
+    font-size: 29px;
+}
+
+.Tuesday p:nth-child(2n + 1) {
+    color: rgb(255, 98, 229);
+}
+
+
+.Wednesday h2 {
+    color: rgb(228, 255, 132);
+    font-size: 29px;
+}
+
+.Wednesday p:nth-child(2n) {
+    color: rgb(253, 139, 93);
+}
+.Thursday h2 {
+    color: rgb(228, 255, 132);
+    font-size: 29px;
+}
+
+.Thursday p:nth-child(n+5) {
+    color: cornflowerblue;
+}
+
+.Friday h2 {
+    color: rgb(228, 255, 132);
+    font-size: 29px;
+}
+
+.Friday p:nth-child(8) {
+    color: rgb(255, 246, 197); 
+}
+
+.Friday p:nth-last-child(-n + 1) {
+    background-color: rgb(183, 169, 255);
+}
+
+h3 {
+    color: cornflowerblue;
+    box-shadow: 6px 4px 36px 12px;
+}
