@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .main-section {
     background-color: #2F303A;
@@ -71,3 +72,20 @@ footer {
 .footer a{
     color: #F5F4FA;
 }
+=======
+header {
+    background-color: #2F303A ;
+}
+body {
+    background-color: white ;
+}
+h2 + button {
+    background-color: #2196F3;
+    section + section {
+        background-color: #F5F4FA;
+    }
+}
+footer {
+    background-color: #2F303A;
+}
+>>>>>>> 366eee378441e20c2c70f5aa47e31de6d54db11c
