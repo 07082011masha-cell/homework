@@ -1,0 +1,73 @@
+
+.main-section {
+    background-color: #2F303A;
+}
+
+a{
+    color: black;
+}
+
+a:hover {
+    color: #2196F3;
+}
+.main-section > h2 {
+    line-height: 200px;
+    font-weight: 15px;
+    font-size: 29px;
+    text-align: center;
+    color: #F5F4FA;
+    --font-family: "Roboto", sans-serif;
+}
+
+.main-section > button {
+    color: #F5F4FA;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.description h2 {
+    font-size: 20px;
+    text-align: left;
+    --font-family: "Roboto", sans-serif;
+}
+.description p {
+    color: grey;
+    --font-family: "Roboto", sans-serif;
+}
+.we-do h2 {
+    font-size: 27px;
+    text-align: center;
+    --font-family: "Roboto", bold;
+}
+.our-team h2 {
+    font-size: 27px;
+    text-align: center;
+}
+.our-team p {
+    font-size: 14px;
+    color: grey;
+}
+body {
+    background-color: white ;
+}
+h2 + button {
+    background-color: #2196F3;
+    section + section {
+        background-color: #F5F4FA;
+    }
+}
+footer {
+    background-color: #2F303A;
+}
+
+.footer h3 {
+    color: #F5F4FA;
+}
+
+.footer address {
+    color: #F5F4FA;
+}
+
+.footer a{
+    color: #F5F4FA;
+}
