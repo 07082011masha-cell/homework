@@ -1,91 +1,119 @@
-<<<<<<< HEAD
-
 .main-section {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 
-a{
-    color: black;
+a {
+  color: black;
 }
 
 a:hover {
-    color: #2196F3;
+  color: #2196f3;
 }
 .main-section > h2 {
-    line-height: 200px;
-    font-weight: 15px;
-    font-size: 29px;
-    text-align: center;
-    color: #F5F4FA;
-    --font-family: "Roboto", sans-serif;
+  line-height: 200px;
+  font-weight: 15px;
+  font-size: 29px;
+  text-align: center;
+  color: #f5f4fa;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-section > button {
-    color: #F5F4FA;
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
+  color: #f5f4fa;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 .description h2 {
-    font-size: 20px;
-    text-align: left;
-    --font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
 }
 .description p {
-    color: grey;
-    --font-family: "Roboto", sans-serif;
+  color: grey;
+  font-family: "Roboto", sans-serif;
 }
 .we-do h2 {
-    font-size: 27px;
-    text-align: center;
-    --font-family: "Roboto", bold;
+  font-size: 27px;
+  text-align: center;
+  --font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .our-team h2 {
-    font-size: 27px;
-    text-align: center;
+  font-size: 27px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 .our-team p {
-    font-size: 14px;
-    color: grey;
+  font-size: 14px;
+  color: grey;
+  font-family: "Roboto", sans-serif;
 }
 body {
-    background-color: white ;
+  background-color: white;
 }
 h2 + button {
-    background-color: #2196F3;
-    section + section {
-        background-color: #F5F4FA;
-    }
+  background-color: #2196f3;
+  section + section {
+    background-color: #f5f4fa;
+  }
 }
 footer {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .footer h3 {
-    color: #F5F4FA;
+  color: #f5f4fa;
 }
 
 .footer address {
-    color: #F5F4FA;
+  color: #f5f4fa;
 }
 
-.footer a{
-    color: #F5F4FA;
+.footer a {
+  color: #f5f4fa;
 }
-=======
+
 header {
-    background-color: #2F303A ;
+  background-color: #2f303a;
 }
 body {
-    background-color: white ;
+  background-color: white;
 }
 h2 + button {
-    background-color: #2196F3;
-    section + section {
-        background-color: #F5F4FA;
-    }
+  background-color: #2196f3;
+  section + section {
+    background-color: #f5f4fa;
+  }
 }
 footer {
-    background-color: #2F303A;
+  background-color: #2f303a;
 }
->>>>>>> 366eee378441e20c2c70f5aa47e31de6d54db11c
+
+.button-sites {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #2196f3;
+  color: #f5f4fa;
+}
+
+button {
+  background-color: #F5F4FA;
+}
+.images-product {
+ font-size: 15px;
+  --font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  font-family: "Roboto", sans-serif;
+}
+
+.images-product p{
+  color: #757575;
+}
