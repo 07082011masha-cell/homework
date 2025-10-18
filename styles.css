@@ -9,111 +9,79 @@ a {
 a:hover {
   color: #2196f3;
 }
-.main-section > h2 {
-  line-height: 200px;
-  font-weight: 15px;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.other-header {
+  color: grey;
+}
+.main-section {
+  line-height: 6.9;
+  font-weight: bold;
   font-size: 29px;
   text-align: center;
   color: #f5f4fa;
-  font-family: "Roboto", sans-serif;
 }
 
-.main-section > button {
+.button-main-section {
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #2196f3;
   color: #f5f4fa;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
 }
-
-.description h2 {
-  font-size: 20px;
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-}
-.description p {
+.text-item-list-description {
   color: grey;
-  font-family: "Roboto", sans-serif;
 }
-.we-do h2 {
-  font-size: 27px;
+
+.text-do {
+  line-height: 3.45;
+  font-weight: bold;
+  font-size: 29px;
   text-align: center;
-  --font-family: "Roboto", sans-serif;
-  font-family: "Roboto", sans-serif;
 }
-.our-team h2 {
-  font-size: 27px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+
+.caption-team {
+  line-height: 3.45;
+  font-weight: bold;
+  font-size: 29px;
+  text-align: center;  
 }
-.our-team p {
-  font-size: 14px;
+
+.caption-iteam-list-team {
+  font-weight: medium;
+}
+
+.text-item-list-team {
   color: grey;
-  font-family: "Roboto", sans-serif;
 }
-body {
-  background-color: white;
-}
-h2 + button {
-  background-color: #2196f3;
-  section + section {
-    background-color: #f5f4fa;
-  }
-}
-footer {
-  background-color: #2f303a;
+.link-footer {
+  color: grey;
 }
 
-.footer h3 {
-  color: #f5f4fa;
-}
-
-.footer address {
-  color: #f5f4fa;
-}
-
-.footer a {
-  color: #f5f4fa;
-}
-
-header {
-  background-color: #2f303a;
-}
-body {
-  background-color: white;
-}
-h2 + button {
-  background-color: #2196f3;
-  section + section {
-    background-color: #f5f4fa;
-  }
-}
-footer {
-  background-color: #2f303a;
-}
-
-.button-sites {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-button:hover {
-  background-color: #2196f3;
-  color: #f5f4fa;
-}
-
-button {
+.button-item-button {
+    width: 125px;
+  height: 25px;
+  font-size: 18px;
   background-color: #F5F4FA;
-}
-.images-product {
- font-size: 15px;
-  --font-family: "Roboto", sans-serif;
-  font-family: "Roboto", sans-serif;
+  color: black;
 }
 
-.logo {
-  font-family: "Roboto", sans-serif;
+.button-item-button:hover {
+  background-color: #2196f3;
+  color: #f5f4fa;
 }
 
-.images-product p{
-  color: #757575;
+.caption-img {
+  font-weight: medium;
+}
+.text-img {
+  color: grey;
+}
+
+.footer {
+  line-height: 1.39;
+  background-color: #2f303a;
 }
