@@ -10,19 +10,45 @@ a:hover {
   color: #2196f3;
 }
 
-body {
+.main-body {
   font-family: "Roboto", sans-serif;
 }
 
-.other-header {
+.other-body {
+  font-family: "Roboto", sans-serif;
+}
+
+.link-other-list-header a {
   color: grey;
 }
+
+.logo-list-header {
+  color: black;
+}
+
+span {
+  color: #2196f3;
+}
+
+
+.logo-footer {
+  color: white;
+}
+.link-ul-list-header {
+  font-weight: medium;
+  font-size: 14;
+}
+
 .main-section {
-  line-height: 6.9;
-  font-weight: bold;
-  font-size: 29px;
   text-align: center;
+}
+
+.text-main-section {
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 44px;
   color: #f5f4fa;
+  text-transform: uppercase;
 }
 
 .button-main-section {
@@ -32,39 +58,54 @@ body {
   background-color: #2196f3;
   color: #f5f4fa;
 }
+
+.caption-item-list-main-description {
+  font-size: 14px;
+  font-weight: bold;
+} 
 .text-item-list-description {
+  font-size: 14px;
   color: grey;
 }
 
+.link-other-list-header {
+  color: grey;
+}
 .text-do {
-  line-height: 3.45;
   font-weight: bold;
-  font-size: 29px;
+  font-size: 36px;
   text-align: center;
 }
 
 .caption-team {
-  line-height: 3.45;
   font-weight: bold;
-  font-size: 29px;
+  font-size: 36px;
   text-align: center;  
 }
 
 .caption-iteam-list-team {
+  font-size: 16px;
   font-weight: medium;
 }
 
 .text-item-list-team {
+  font-size: 16px;
   color: grey;
 }
 .link-footer {
   color: grey;
+  font-size: 14px;
+}
+
+.address-footer {
+  font-style: normal;
+  font-size: 14px;
+  color: white;
 }
 
 .button-item-button {
-    width: 125px;
-  height: 25px;
-  font-size: 18px;
+  height: 38px;
+  width: 73px;
   background-color: #F5F4FA;
   color: black;
 }
@@ -75,13 +116,15 @@ body {
 }
 
 .caption-img {
-  font-weight: medium;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
 }
 .text-img {
+  font-size: 16px;
   color: grey;
 }
 
 .footer {
-  line-height: 1.39;
   background-color: #2f303a;
 }
