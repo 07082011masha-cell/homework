@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,18 +20,17 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
     />
   </head>
   <body class="page2">
     <!-- info -->
     <header class="header">
       <nav class="nav-header">
-        <h1 class="logo-nav-header"><span class="color-logo">Web</span>Studio</h1>
+        <h1 class="logo-nav-header">
+          <span class="color-logo">Web</span>Studio
+        </h1>
         <ul class="list-header">
           <li class="item-list-header"><a href="./index.html">Студія</a></li>
           <li class="item-list-header">
@@ -47,96 +54,121 @@
     </header>
     <main class="2main">
       <!-- buttons -->
-       <section class="menu">
-      <ul class="menu-list">
-        <li class="menu-list-item">
-          <button class="menu-item-button" type="button">Усі</button>
-        </li>
-        <li class="menu-list-item">
-          <button class="menu-item-button" type="button">Веб-сайти</button>
-        </li>
-        <li class="menu-list-item">
-          <button class="menu-item-button" type="button">Додатки</button>
-        </li>
-        <li class="menu-list-item">
-          <button class="menu-item-button" type="button">Дизайн</button>
-        </li>
-        <li class="menu-list-item">
-          <button class="menu-item-button" type="button">Маркетинг</button>
-        </li>
-      </ul>
+      <section class="menu">
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <button class="menu-item-button" type="button">Усі</button>
+          </li>
+          <li class="menu-list-item">
+            <button class="menu-item-button" type="button">Веб-сайти</button>
+          </li>
+          <li class="menu-list-item">
+            <button class="menu-item-button" type="button">Додатки</button>
+          </li>
+          <li class="menu-list-item">
+            <button class="menu-item-button" type="button">Дизайн</button>
+          </li>
+          <li class="menu-list-item">
+            <button class="menu-item-button" type="button">Маркетинг</button>
+          </li>
+        </ul>
       </section>
       <!-- images -->
-       <section class="portfolio">
-      <ul class="portfolio-list">
-        <li class="images-list-item">
-          <img class="portfolio-list-item-img"
-            src="./images/img-with-people-in-a-pc.png"
-            alt="people in a pc"
-          />
-          <h2 class="portfolio-list-caption">Технокряк</h2>
-          <p class="portfolio-list-item-text">Веб-сайт</p>
-        </li>
-        <li class="images-list-item">
-          <img class="portfolio-list-item-img"
-            src="./images/basketball-guys.png"
-            alt="man are playing basketball"
-          />
-          <h2 class="portfolio-list-caption">Постер New Orlean vs Golden Star</h2>
-          <p class="portfolio-list-item-text">Дизайн</p>
-        </li>
-        <li class="images-list-item">
-          <img class="portfolio-list-item-img"
-            src="./images/seafood-fish-logo.png"
-            alt="logo of the seafood restaurant"
-          />
-          <h2 class="portfolio-list-caption">Ресторан Seafood</h2>
-          <p class="portfolio-list-item-text">Додаток</p>
-        </li>
-        <li class="images-list-item">
-          <img class="portfolio-list-item-img" src="./images/headphone.png" alt="image of a headphone" />
-          <h2 class="portfolio-list-item-caption">Проєкт Prime</h2>
-          <p class="portfolio-list-item-text">Маркетинг</p>
-        </li>
-        <li class="images-list-item">
-          <img class="portfolio-list-item-img" src="./images/img-of-two-boxes.png" alt="image of 2 boxes" />
-          <h2 class="portfolio-list-caption">Проєкт Boxes</h2>
-          <p class="portfolio-list-item-text">Додаток</p>
-        </li>
-        <li class="images-list-item">
-          <img class="portfolio-list-item-img" src="./images/img-of-an-apple-pc.png" alt="image pf a pc" />
-          <h2 class="portfolio-list-caption">Inspiration has no Borders</h2>
-          <p class="portfolio-list-item-text">Веб-сайт</p>
-        </li>
-        <li class="images-list-item">
-          <img class="portfolio-list-item-img"
-            src="./images/img-of-a-fashionable-magazine.png"
-            alt="image of an magazine"
-          />
-          <h2 class="portfolio-list-caption">Видання Limited Edition</h2>
-          <p class="portfolio-list-item-text">Дизайн</p>
-        </li>
-        <li class="images-list-item">
-          <img class="portfolio-list-item-img" src="./images/img-of-a-label-tag.png" alt="label tag" />
-          <h2 class="portfolio-list-caption">Проєкт LAB</h2>
-          <p class="portfolio-list-item-text">Маркетинг</p>
-        </li>
-        <li class="images-list-item">
-          <img class="portfolio-list-item-img"
-            src="./images/img-of-a-business-laptop.png"
-            alt="man doing business in the laptop"
-          />
-          <h2 class="portfolio-list-caption">Growing Business</h2>
-          <p class="portfolio-list-item-text">Додаток</p>
-        </li>
-      </ul>
+      <section class="portfolio">
+        <ul class="portfolio-list">
+          <li class="images-list-item">
+            <img
+              class="portfolio-list-item-img"
+              src="./images/img-with-people-in-a-pc.png"
+              alt="people in a pc"
+            />
+            <h2 class="portfolio-list-caption">Технокряк</h2>
+            <p class="portfolio-list-item-text">Веб-сайт</p>
+          </li>
+          <li class="images-list-item">
+            <img
+              class="portfolio-list-item-img"
+              src="./images/basketball-guys.png"
+              alt="man are playing basketball"
+            />
+            <h2 class="portfolio-list-caption">
+              Постер New Orlean vs Golden Star
+            </h2>
+            <p class="portfolio-list-item-text">Дизайн</p>
+          </li>
+          <li class="images-list-item">
+            <img
+              class="portfolio-list-item-img"
+              src="./images/seafood-fish-logo.png"
+              alt="logo of the seafood restaurant"
+            />
+            <h2 class="portfolio-list-caption">Ресторан Seafood</h2>
+            <p class="portfolio-list-item-text">Додаток</p>
+          </li>
+          <li class="images-list-item">
+            <img
+              class="portfolio-list-item-img"
+              src="./images/headphone.png"
+              alt="image of a headphone"
+            />
+            <h2 class="portfolio-list-caption">Проєкт Prime</h2>
+            <p class="portfolio-list-item-text">Маркетинг</p>
+          </li>
+          <li class="images-list-item">
+            <img
+              class="portfolio-list-item-img"
+              src="./images/img-of-two-boxes.png"
+              alt="image of 2 boxes"
+            />
+            <h2 class="portfolio-list-caption">Проєкт Boxes</h2>
+            <p class="portfolio-list-item-text">Додаток</p>
+          </li>
+          <li class="images-list-item">
+            <img
+              class="portfolio-list-item-img"
+              src="./images/img-of-an-apple-pc.png"
+              alt="image pf a pc"
+            />
+            <h2 class="portfolio-list-caption">Inspiration has no Borders</h2>
+            <p class="portfolio-list-item-text">Веб-сайт</p>
+          </li>
+          <li class="images-list-item">
+            <img
+              class="portfolio-list-item-img"
+              src="./images/img-of-a-fashionable-magazine.png"
+              alt="image of an magazine"
+            />
+            <h2 class="portfolio-list-caption">Видання Limited Edition</h2>
+            <p class="portfolio-list-item-text">Дизайн</p>
+          </li>
+          <li class="images-list-item">
+            <img
+              class="portfolio-list-item-img"
+              src="./images/img-of-a-label-tag.png"
+              alt="label tag"
+            />
+            <h2 class="portfolio-list-caption">Проєкт LAB</h2>
+            <p class="portfolio-list-item-text">Маркетинг</p>
+          </li>
+          <li class="images-list-item">
+            <img
+              class="portfolio-list-item-img"
+              src="./images/img-of-a-business-laptop.png"
+              alt="man doing business in the laptop"
+            />
+            <h2 class="portfolio-list-caption">Growing Business</h2>
+            <p class="portfolio-list-item-text">Додаток</p>
+          </li>
+        </ul>
       </section>
     </main>
     <!-- footer -->
     <footer class="footer">
       <h3 class="logo-footer"><span class="color-logo">Web</span>WebStudio</h3>
       <address class="address-footer">м. Київ, пр-т Лесі Українки, 26</address>
-      <a class="link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="link-footer" href="mailto:info@devstudio.com"
+        >info@devstudio.com</a
+      >
       <a class="link-footer" href="tel:+380961111111">+38 096 111 11 11</a>
     </footer>
   </body>
