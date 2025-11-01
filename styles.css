@@ -3,12 +3,28 @@
   text-align: center;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
 a {
   color: black;
 }
 
 a:hover {
   color: #2196f3;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.main {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .main-body {
@@ -56,6 +72,11 @@ a:hover {
   color: #f5f4fa;
 }
 
+.description {
+  padding-top: 94px;
+  padding-bottom: 22px;
+}
+
 .caption-item-list-description {
   font-size: 14px;
   font-weight: bold;
@@ -68,10 +89,20 @@ a:hover {
 .address-header {
   color: grey;
 }
+
+.do {
+  padding-top: 70px;
+  padding-bottom: 94px;
+}
 .text-do {
   font-weight: bold;
   font-size: 36px;
   text-align: center;
+}
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 124px;
 }
 
 .caption-team {
@@ -88,6 +119,12 @@ a:hover {
 .text-item-list-team {
   font-size: 16px;
   color: grey;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
 }
 .link-footer {
   color: grey;
@@ -122,6 +159,12 @@ a:hover {
   color: grey;
 }
 
-.footer {
-  background-color: #2f303a;
+.menu {
+  padding-top: 94px;
+  padding-bottom: 34px;
+}
+
+.portfolio {
+  padding-top: 34px;
+  padding-bottom: 114px;
 }
