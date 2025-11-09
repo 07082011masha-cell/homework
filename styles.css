@@ -4,9 +4,9 @@
 }
 
 .container {
-  width: 1200px;
-  padding-left: 200px;
-  padding-right: 200px;
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 a {
@@ -24,10 +24,8 @@ a:hover {
 
 .nav-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  padding-right: 93px;
+  gap: 93px;
 }
 
 .list-header {
@@ -115,6 +113,7 @@ a:hover {
 .do {
   padding-top: 94px;
   padding-bottom: 94px;
+    gap: 30px;
 }
 .text-do {
   font-weight: bold;
@@ -126,6 +125,10 @@ a:hover {
   display: flex;
   justify-content: space-around;
   padding-top: 50px;
+}
+
+.item-list-do {
+  width: 370px;
 }
 
 .team {
@@ -180,14 +183,15 @@ a:hover {
 .link-footer {
   color: grey;
   font-size: 14px;
-  padding-top: 9px;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .address-footer {
   font-style: normal;
   font-size: 14px;
   color: white;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .menu-list {
