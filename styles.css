@@ -32,6 +32,10 @@ a:hover {
   display: flex;
   gap: 50px;
 }
+
+.links-header {
+  margin-left: auto;
+}
 .main {
   padding-top: 200px;
   padding-bottom: 200px;
