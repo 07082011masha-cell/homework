@@ -93,7 +93,7 @@ a:hover {
 
 .description {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 70px;
 }
 .list-description {
   display: flex;
@@ -205,6 +205,7 @@ a:hover {
     list-style: none;
     justify-content: center;
     align-content: flex-end;
+    margin-bottom: 34px;
 }
 
 .menu-item-button {
@@ -252,6 +253,6 @@ a:hover {
 }
 
 .portfolio {
-  padding-top: 34px;
+  padding-top: auto;
   padding-bottom: 114px;
 }
