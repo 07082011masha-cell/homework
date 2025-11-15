@@ -4,11 +4,12 @@
 }
 
 .container {
-  width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 1600px;
   padding-left: 215px;
   padding-right: 215px;
+  margin-right: 0;
+  margin-left: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -83,6 +84,10 @@ a:hover {
   font-size: 44px;
   color: #f5f4fa;
   text-transform: uppercase;
+  text-align: center;
+  margin-left: 237px;
+  margin-right: 237px;
+  letter-spacing: 0px;
 }
 
 .button-main {
@@ -91,6 +96,7 @@ a:hover {
   font-size: 18px;
   background-color: #2196f3;
   color: #f5f4fa;
+  margin-top: 30px;
 }
 
 .description {
@@ -105,7 +111,7 @@ a:hover {
 .caption-item-list-description {
   font-size: 14px;
   font-weight: bold;
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 .text-item-list-description {
   font-size: 14px;
@@ -119,7 +125,7 @@ a:hover {
 .do {
   padding-top: 94px;
   padding-bottom: 94px;
-    gap: 30px;
+  gap: 30px;
 }
 .text-do {
   font-weight: bold;
@@ -149,19 +155,19 @@ a:hover {
 }
 
 .list-team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    list-style: none;
-    justify-content: center;
-    align-content: flex-end;
-    padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  justify-content: center;
+  align-content: flex-end;
+  padding-top: 50px;
 }
 
 .img-item-list-team {
-    width:100%;
-    height: 260px;
-    object-fit: cover;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
 }
 
 .item-list-team {
@@ -201,13 +207,13 @@ a:hover {
 }
 
 .menu-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    list-style: none;
-    justify-content: center;
-    align-content: flex-end;
-    margin-bottom: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  justify-content: center;
+  align-content: flex-end;
+  margin-bottom: 34px;
 }
 
 .menu-item-button {
@@ -223,13 +229,13 @@ a:hover {
 }
 
 .portfolio-list {
-      display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    list-style: none;
-    justify-content: center;
-    align-content: flex-end;
-    padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  justify-content: center;
+  align-content: flex-end;
+  padding-bottom: 30px;
 }
 
 .portfolio-list-item-img {
