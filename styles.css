@@ -4,11 +4,11 @@
 }
 
 .container {
-  width: 1600px;
-  padding-left: 215px;
-  padding-right: 215px;
-  margin-right: 0;
-  margin-left: 0;
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -23,6 +23,7 @@ a:hover {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  padding-left: 15px;
 }
 
 .nav-header {
@@ -61,8 +62,9 @@ a:hover {
   color: grey;
 }
 
-.logo-list-header {
+.logo-nav-header {
   color: black;
+  font-family: "Raleway", sans-serif;
 }
 
 .color-logo {
@@ -72,6 +74,8 @@ a:hover {
 .logo-footer {
   color: white;
   padding-bottom: 20px;
+  font-size: 26px;
+  font-family: "Raleway", sans-serif;
 }
 .link-ul-list-header {
   font-weight: medium;
@@ -79,14 +83,15 @@ a:hover {
 }
 
 .text-main {
+  max-width: 696px;
   line-height: 60px;
   font-weight: bold;
   font-size: 44px;
   color: #f5f4fa;
   text-transform: uppercase;
   text-align: center;
-  margin-left: 237px;
-  margin-right: 237px;
+  margin-left: auto;
+  margin-right: auto;
   letter-spacing: 0px;
 }
 
@@ -97,25 +102,28 @@ a:hover {
   background-color: #2196f3;
   color: #f5f4fa;
   margin-top: 30px;
+  border-radius: 4px;
 }
 
 .description {
   padding-top: 94px;
-  padding-bottom: 70px;
+  padding-bottom: 94px;
 }
 .list-description {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .caption-item-list-description {
   font-size: 14px;
   font-weight: bold;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .text-item-list-description {
   font-size: 14px;
   color: grey;
+  line-height: 24px;
 }
 
 .address-header {
@@ -136,7 +144,8 @@ a:hover {
 .list-do {
   display: flex;
   justify-content: space-around;
-  padding-top: 50px;
+  margin-top: 50px;
+  gap: 30px;
 }
 
 .item-list-do {
@@ -146,6 +155,7 @@ a:hover {
 .team {
   padding-top: 94px;
   padding-bottom: 124px;
+  background-color: #f5f4fa;
 }
 
 .caption-team {
@@ -160,19 +170,22 @@ a:hover {
   gap: 30px;
   list-style: none;
   justify-content: center;
-  align-content: flex-end;
-  padding-top: 50px;
+  align-items: flex-start;
+  margin-top: 50px;
 }
 
 .img-item-list-team {
   width: 100%;
   height: 260px;
-  object-fit: cover;
+  display: block;
 }
 
 .item-list-team {
   background-color: rgb(255, 255, 255);
   width: 270px;
+  padding-bottom: 30px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .caption-iteam-list-team {
@@ -195,8 +208,11 @@ a:hover {
 .link-footer {
   color: grey;
   font-size: 14px;
-  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
   margin-bottom: 9px;
+  line-height: 24px;
 }
 
 .address-footer {
@@ -218,9 +234,10 @@ a:hover {
 
 .menu-item-button {
   height: 38px;
-  width: 73px;
+  padding: 6px 22px;
   background-color: #f5f4fa;
   color: black;
+  border-radius: 4px;
 }
 
 .menu-item-button:hover {
@@ -235,7 +252,6 @@ a:hover {
   list-style: none;
   justify-content: center;
   align-content: flex-end;
-  padding-bottom: 30px;
 }
 
 .portfolio-list-item-img {
@@ -247,12 +263,20 @@ a:hover {
   font-weight: bold;
   color: black;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 4px;
+  margin-right: 24px;
+  margin-left: 24px;
+  line-height: 36px;
+  font-size: 18px;
 }
 .portfolio-list-item-text {
   font-size: 16px;
   color: grey;
   padding-bottom: 20px;
+  margin-right: 24px;
+  margin-left: 24px;
+  line-height: 30px;
+  font-size: 16px;
 }
 
 .menu {
