@@ -1,3 +1,4 @@
+
 .main {
   background-color: #2f303a;
   text-align: center;
@@ -255,7 +256,7 @@ a:hover {
 }
 
 .portfolio-list-item-img {
-  width: 370px;
+  /* width: 370px; */
 }
 
 .portfolio-list-caption {
@@ -277,6 +278,10 @@ a:hover {
   margin-left: 24px;
   line-height: 30px;
   font-size: 16px;
+}
+
+.images-list-item {
+  flex-basis: calc((100% - 8 * 30px) / 9);
 }
 
 .menu {
