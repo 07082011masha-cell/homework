@@ -109,6 +109,31 @@ a:hover {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.item-list-description::before {
+  content: "";
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 120px;
+  background-image: url("./images/satellite.png");
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.item-list-description:nth-child(2)::before {
+  background-image: url("./images/clock.png");
+}
+
+.item-list-description:nth-child(3)::before {
+  background-image: url("./images/laptop.png");
+}
+
+.item-list-description:nth-child(4)::before {
+  background-image: url("./images/spaceman.png");
+}
+
 .list-description {
   display: flex;
   justify-content: space-between;
@@ -131,7 +156,7 @@ a:hover {
 }
 
 .do {
-  padding-top: 94px;
+  /* padding-top: 94px; */
   padding-bottom: 94px;
   gap: 30px;
 }
@@ -148,33 +173,9 @@ a:hover {
   gap: 30px;
 }
 
-.img-list-do {
-  font-size: 0;
-  line-height: 0;
-}
-
-.img-list-do::before {
-  content: "";
-  display: block;
+.item-list-do {
   width: 370px;
-  height: 294px;
-  background-image: url("./images/img.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-
-.img-list-do:nth-child(2)::before {
-  background-image: url("./images/img-1.png");
-}
-
-.img-list-do:nth-child(3)::before {
-  background-image: url("./images/img-2.png");
-}
-
-
-/* .item-list-do {
-
-} */
 
 .team {
   padding-top: 94px;
@@ -278,9 +279,10 @@ a:hover {
   align-content: flex-end;
 }
 
-/* .portfolio-list-item-img {
+.portfolio-list-item-img {
   width: 370px;
-} */
+  /* width: 370px; */
+}
 
 .portfolio-list-caption {
   font-size: 18px;
