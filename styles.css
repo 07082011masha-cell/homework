@@ -1,5 +1,5 @@
 .main {
-  background-color: #2f303a;
+  /* background-color: #2f303a; */
   text-align: center;
 }
 
@@ -43,6 +43,15 @@ a:hover {
 .main {
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("./images/img-head.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-body {
@@ -103,6 +112,7 @@ a:hover {
   color: #f5f4fa;
   margin-top: 30px;
   border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .description {
@@ -118,8 +128,8 @@ a:hover {
   width: 270px;
   height: 120px;
   background-image: url("./images/satellite.png");
-    margin-bottom: 30px;
-    border-radius: 5px;
+  margin-bottom: 30px;
+  border-radius: 5px;
 }
 
 .item-list-description:nth-child(2)::before {
@@ -211,6 +221,9 @@ a:hover {
   padding-bottom: 30px;
   text-align: center;
   border-radius: 4px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .caption-iteam-list-team {
@@ -268,6 +281,8 @@ a:hover {
 .menu-item-button:hover {
   background-color: #2196f3;
   color: #f5f4fa;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-list {
@@ -277,11 +292,6 @@ a:hover {
   list-style: none;
   justify-content: center;
   align-content: flex-end;
-}
-
-.portfolio-list-item-img {
-  width: 370px;
-  /* width: 370px; */
 }
 
 .portfolio-list-caption {
@@ -307,6 +317,13 @@ a:hover {
 
 .images-list-item {
   flex-basis: calc((100% - 8 * 30px) / 9);
+  box-sizing: border-box;
+}
+
+.images-list-item:hover {
+  outline: 1px solid #eee;
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .menu {
