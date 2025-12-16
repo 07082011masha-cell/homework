@@ -24,6 +24,7 @@ a:hover {
   padding-top: 24px;
   padding-bottom: 25px;
   padding-left: 15px;
+  outline: 1px solid #ECECEC;
 }
 
 .nav-header {
@@ -105,7 +106,7 @@ a:hover {
 }
 
 .button-main {
-  width: 200px;
+  width: 216px;
   height: 50px;
   font-size: 18px;
   background-color: #2196f3;
@@ -113,6 +114,11 @@ a:hover {
   margin-top: 30px;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  line-height: 1.875;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
 }
 
 .description {
@@ -318,6 +324,7 @@ a:hover {
 .images-list-item {
   flex-basis: calc((100% - 8 * 30px) / 9);
   box-sizing: border-box;
+  outline: 1px solid #EEEEEE;
 }
 
 .images-list-item:hover {
