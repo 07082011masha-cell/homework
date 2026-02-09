@@ -166,20 +166,21 @@ a:hover {
 
 .address-header {
   color: grey;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header-img {
   width: 16px;
   height: 12px;
   fill: grey;
-  padding-right: 10px;
 }
 
 .header-img2 {
   width: 10px;
   height: 16px;
   fill: grey;
-  padding-right: 10px;
 }
 
 .address-header:hover .header-img {
@@ -268,14 +269,22 @@ a:hover {
 .team-social {
   display: flex;
   justify-content: center;
-  gap: 26px;
-  margin-top: 28px;
+  gap: 10px;
+  margin-top: 18px;
 }
 
 .team-img {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+}
+
+.team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
 }
 
 .team-link:hover {
@@ -399,15 +408,12 @@ a:hover {
   line-height: 24px;
 }
 
-.footer-information {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .footer-join {
+  margin-left: 70px;
   display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-direction: column;
 }
 
 .footer-img {
@@ -425,10 +431,14 @@ a:hover {
 
 .footer-link {
   border-radius: 50%;
-  outline: 1px solid grey;
-  background-color: grey;
+  outline: 1px solid rgba(255, 255, 255, 10%);
+ background-color: rgba(255, 255, 255, 10%);
   width: 44px;
   height: 44px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-link:hover {
@@ -445,6 +455,16 @@ a:hover {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
 }
 
 .menu-list {
@@ -526,4 +546,15 @@ a:hover {
 .portfolio {
   padding-top: auto;
   padding-bottom: 114px;
+}
+
+.container-footer {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: baseline;
 }
