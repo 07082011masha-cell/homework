@@ -210,7 +210,32 @@ a:hover {
 }
 
 .item-list-do {
+  display: block;
+  width: 100%;
+}
+
+.do-item {
+  /* width: 370px; */
+  position: relative;
+}
+
+.caption-do {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
   width: 370px;
+  height: 70px;
+  text-align: center;
 }
 
 .team {
