@@ -61,7 +61,9 @@
       <section class="main">
         <div class="container">
           <h2 class="text-main">Ефективні рішення для вашого бізнесу</h2>
-          <button class="button-main" type="button">Замовити послугу</button>
+          <button class="button-main" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!-- Description -->
@@ -105,27 +107,15 @@
           <ul class="list-do">
             <li class="do-item">
               <p class="caption-do">Десктопні додатки</p>
-              <img
-                class="item-list-do"
-                src="./images/img.png"
-                alt="img1"
-              />
+              <img class="item-list-do" src="./images/img.png" alt="img1" />
             </li>
             <li class="do-item">
               <p class="caption-do">Мобільні додатки</p>
-              <img
-                class="item-list-do"
-                src="./images/img-1.png"
-                alt="img2"
-              />
+              <img class="item-list-do" src="./images/img-1.png" alt="img2" />
             </li>
             <li class="do-item">
               <p class="caption-do">Дизайнерські рішення</p>
-              <img
-                class="item-list-do"
-                src="./images/img-2.png"
-                alt="img3"
-              />
+              <img class="item-list-do" src="./images/img-2.png" alt="img3" />
             </li>
           </ul>
         </div>
@@ -358,7 +348,8 @@
             м. Київ, пр-т Лесі Українки, 26
           </address>
           <a class="link-footer" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a>
+            >info@devstudio.com</a
+          >
           <a class="link-footer" href="tel:+380961111111">+38 096 111 11 11</a>
         </div>
         <ul class="footer-join">
@@ -394,7 +385,77 @@
             </li>
           </div>
         </ul>
+<div class="footer-subscribe">
+  <p class="subscribe-caption">Підпишіться на розсилку</p>
+  <form class="subscribe-form">
+    <input
+      type="email"
+      class="subscribe-input"
+      placeholder="E-mail"
+      required
+    />
+    <button type="submit" class="subscribe-button">
+      Підписатися
+      <svg class="subscribe-icon">
+        <use href="./images/symbol-defs.svg#icon-message"></use>
+      </svg>
+    </button>
+  </form>
+</div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="model">
+        <button class="model-butn" data-modal-close type="button">
+          <svg class="model-icon">
+            <use href="./images/symbol-defs.svg#icon-vector"></use>
+          </svg>
+        </button>
+        <h2 class="model-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="model-form">
+          <label class="model-label"
+            >Ім'я
+            <input
+              class="model-input"
+              type="text"
+              required
+              minlength="2"
+              maxlength="15"
+            />
+            <svg class="model-pic">
+              <use href="./images/symbol-defs.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="model-label"
+            >Телефон
+            <input class="model-input" type="tel" />
+            <svg class="model-pic">
+              <use href="./images/symbol-defs.svg#icon-call"></use>
+            </svg>
+          </label>
+          <label class="model-label"
+            >Пошта
+            <input class="model-input" type="email" required minlength="10" />
+            <svg class="model-pic">
+              <use href="./images/symbol-defs.svg#icon-black-letter"></use>
+            </svg>
+          </label>
+          <label class="model-label"
+            >Коментар
+            <textarea
+              placeholder="Введіть текст"
+              class="model-coment"
+            ></textarea>
+          </label>
+          <div class="model-box">
+            <input class="model-check" type="checkbox" required />
+            <p class="model-text">Погоджуюся з розсилкою та приймаю</p>
+            <a class="model-link" href="">Умови договору</a>
+          </div>
+          <button class="model-submit" type="submit">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./js/model.js"></script>
   </body>
 </html>
