@@ -585,7 +585,7 @@ a:hover {
 }
 
 .footer-subscribe {
-  padding-left: 93px;
+  margin-left:auto;
 }
 
 .subscribe-caption {
@@ -652,6 +652,7 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+  box-sizing: border-box;
 }
 
 .model-butn {
@@ -724,6 +725,7 @@ a:hover {
 .model-coment {
   display: block;
   width: 100%;
+  height: 120px;
   outline: 1px solid rgba(33, 33, 33, 0.2);
   border: none;
   border-radius: 4px;
@@ -735,7 +737,8 @@ a:hover {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   margin-top: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
+  box-sizing: border-box;
 }
 
 .model-box {
