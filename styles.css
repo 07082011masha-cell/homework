@@ -65,6 +65,27 @@ a:hover {
   gap: 50px;
 }
 
+#header-link {
+  align-items: center;
+  position: relative;
+}
+
+#header-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  position: absolute;
+  top: 51px;
+  left: 0;
+  opacity: 0;
+}
+
+#header-link:hover::after {
+  opacity: 1;
+}
+
 .link-other-list-header a {
   color: grey;
 }
@@ -549,10 +570,28 @@ a:hover {
   font-size: 16px;
 }
 
+.portfolio-hover {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  background-color: rgb(33, 150, 255, 90%);
+  width:100%;
+  height: 294px;
+  opacity: 0;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  box-sizing: border-box;
+}
+
 .images-list-item {
   flex-basis: calc((100% - 8 * 30px) / 9);
   box-sizing: border-box;
   outline: 1px solid #eeeeee;
+  position: relative;
 }
 
 .images-list-item:hover {
@@ -561,6 +600,12 @@ a:hover {
     1px 4px 6px 0 rgba(0, 0, 0, 0.16),
     0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.images-list-item:hover {
+  .portfolio-hover {
+    opacity: 1;
+  }
 }
 
 .menu {
@@ -585,7 +630,7 @@ a:hover {
 }
 
 .footer-subscribe {
-  margin-left:auto;
+  margin-left: auto;
 }
 
 .subscribe-caption {
@@ -737,7 +782,7 @@ a:hover {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   margin-top: 4px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   box-sizing: border-box;
 }
 
