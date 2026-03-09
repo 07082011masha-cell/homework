@@ -630,24 +630,26 @@ a:hover {
   padding: 63px 24px;
   background-color: rgb(33, 150, 255, 90%);
   width: 100%;
-  height: 294px;
+  height: 100%;
   opacity: 0;
   line-height: 156%;
   letter-spacing: 0.03em;
   box-sizing: border-box;
-  transition-property: opacity;
+  transition-property: opacity, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
 }
 
 .images-list-item {
-  flex-basis: calc((100% - 8 * 30px) / 9);
+  flex-basis: calc((100% - 60px) / 3);
   box-sizing: border-box;
   outline: 1px solid #eeeeee;
   position: relative;
   transition-property: outline, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* overflow: hidden; */
 }
 
 .images-list-item:hover {
@@ -658,10 +660,14 @@ a:hover {
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.images-list-item:hover {
-  .portfolio-hover {
-    opacity: 1;
-  }
+.images-list-item:hover .portfolio-hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
 .menu {
@@ -737,11 +743,19 @@ a:hover {
   width: 100%;
   height: 100%;
   opacity: 1;
+  z-index: 1;
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden > .model {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .model {
@@ -751,9 +765,12 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
   padding: 40px;
   box-sizing: border-box;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-butn {
