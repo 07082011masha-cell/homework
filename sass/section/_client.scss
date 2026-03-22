@@ -1,0 +1,114 @@
+.client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #ffffff;
+}
+
+.client-caption {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+.client-ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-img {
+    height: 46px;
+    width: 41px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-img2 {
+    width: 40px;
+    height: 52px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-img3 {
+    width: 44px;
+    height: 42px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-img4 {
+    width: 84px;
+    height: 40px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-img5 {
+    width: 63px;
+    height: 46px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-img6 {
+    width: 94px;
+    height: 44px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-link:hover {
+    outline: 2px solid #2196f3;
+}
+
+.client-link:hover .client-img {
+    fill: #2196f3;
+}
+
+.client-link:hover .client-img2 {
+    fill: #2196f3;
+}
+
+.client-link:hover .client-img3 {
+    fill: #2196f3;
+}
+
+.client-link:hover .client-img4 {
+    fill: #2196f3;
+}
+
+.client-link:hover .client-img5 {
+    fill: #2196f3;
+}
+
+.client-link:hover .client-img6 {
+    fill: #2196f3;
+}

@@ -1,0 +1,46 @@
+.description {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.item-list-description::before {
+    content: "";
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 120px;
+    background-image: url("./images/satellite.png");
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.item-list-description:nth-child(2)::before {
+    background-image: url("./images/clock.png");
+}
+
+.item-list-description:nth-child(3)::before {
+    background-image: url("./images/laptop.png");
+}
+
+.item-list-description:nth-child(4)::before {
+    background-image: url("./images/spaceman.png");
+}
+
+.list-description {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.caption-item-list-description {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-item-list-description {
+    font-size: 14px;
+    color: grey;
+    line-height: 24px;
+}
