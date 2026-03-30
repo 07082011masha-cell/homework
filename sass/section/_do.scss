@@ -1,34 +1,29 @@
-.do {
-    /* padding-top: 94px; */
-    padding-bottom: 94px;
-    gap: 30px;
-}
+@use"../base/variables" as *;
 
-.text-do {
+
+.do {
+  padding-bottom: 94px;
+  gap: 30px;
+
+  &__title {
     font-weight: bold;
     font-size: 36px;
     text-align: center;
-}
+  }
 
-.list-do {
+  &__list {
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
     gap: 30px;
-}
+  }
 
-.item-list-do {
-    display: block;
-    width: 100%;
-}
-
-.do-item {
-    /* width: 370px; */
+  &__item {
     position: relative;
-}
+  }
 
-.caption-do {
-    font-family: "Roboto", sans-serif;
+  &__subtitle {
+    font-family: $font-family;
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -44,4 +39,10 @@
     width: 370px;
     height: 70px;
     text-align: center;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
 }

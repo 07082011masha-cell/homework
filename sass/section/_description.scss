@@ -1,9 +1,18 @@
+@use"../base/variables" as *;
+
+
 .description {
     padding-top: 94px;
     padding-bottom: 94px;
+
+
+    &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-.item-list-description::before {
+&__item::before {
     content: "";
     display: block;
     background-size: cover;
@@ -15,32 +24,39 @@
     border-radius: 5px;
 }
 
-.item-list-description:nth-child(2)::before {
+
+&__item:nth-child(2)::before {
     background-image: url("../images/clock.png");
 }
 
-.item-list-description:nth-child(3)::before {
+
+
+&__item:nth-child(3)::before {
     background-image: url("../images/laptop.png");
 }
 
-.item-list-description:nth-child(4)::before {
+
+
+&__item:nth-child(4)::before {
     background-image: url("../images/spaceman.png");
 }
 
-.list-description {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
 
-.caption-item-list-description {
+&__title {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.text-item-list-description {
+
+&__subtitle {
     font-size: 14px;
     color: grey;
     line-height: 24px;
 }
+
+}
+
+
+
+

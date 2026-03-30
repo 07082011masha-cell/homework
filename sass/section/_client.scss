@@ -1,114 +1,117 @@
-.client {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: #ffffff;
-}
+@use"../base/variables" as *;
 
-.client-caption {
+
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $client;
+
+  &__title {
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: $client-title;
     margin-bottom: 50px;
-}
+  }
 
-.client-ul {
+  &__list {
     display: flex;
     justify-content: space-between;
-}
+  }
 
-.client-link {
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: 2px solid #afb1b8;
+    outline: 2px solid $client-link;
     border-radius: 4px;
     width: 170px;
     height: 92px;
     transition-property: outline;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.client-img {
+  &__link:hover {
+    outline: 2px solid $client-link-hover;
+  }
+
+  &__link:hover .client__icon {
+    fill: $client-link-hover-icon1;
+  }
+
+  &__link:hover .client__icon2 {
+    fill: $client-link-hover-icon2;
+  }
+
+  &__link:hover .client__icon3 {
+    fill: $client-link-hover-icon3;
+  }
+
+  &__link:hover .client__icon4 {
+    fill: $client-link-hover-icon4;
+  }
+
+  &__link:hover .client__icon5 {
+    fill: $client-link-hover-icon5;
+  }
+
+  &__link:hover .client__icon6 {
+    fill: $client-link-hover-icon6;
+  }
+
+  &__icon {
     height: 46px;
     width: 41px;
-    fill: #afb1b8;
+    fill: $client-icon1;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.client-img2 {
+  &__icon2 {
     width: 40px;
     height: 52px;
-    fill: #afb1b8;
+    fill: $client-icon2;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.client-img3 {
+  &__icon3 {
     width: 44px;
     height: 42px;
-    fill: #afb1b8;
+    fill: $client-icon3;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.client-img4 {
+  &__icon4 {
     width: 84px;
     height: 40px;
-    fill: #afb1b8;
+    fill: $client-icon4;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.client-img5 {
+  &__icon5 {
     width: 63px;
     height: 46px;
-    fill: #afb1b8;
+    fill: $client-icon5;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.client-img6 {
+  &__icon6 {
     width: 94px;
     height: 44px;
-    fill: #afb1b8;
+    fill: $client-icon6;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-link:hover {
-    outline: 2px solid #2196f3;
-}
-
-.client-link:hover .client-img {
-    fill: #2196f3;
-}
-
-.client-link:hover .client-img2 {
-    fill: #2196f3;
-}
-
-.client-link:hover .client-img3 {
-    fill: #2196f3;
-}
-
-.client-link:hover .client-img4 {
-    fill: #2196f3;
-}
-
-.client-link:hover .client-img5 {
-    fill: #2196f3;
-}
-
-.client-link:hover .client-img6 {
-    fill: #2196f3;
+  }
 }

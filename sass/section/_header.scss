@@ -1,115 +1,116 @@
-a {
-    color: black;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-a:hover {
-    color: #2196f3;
-}
+@use "../base/variables" as *;
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    padding-left: 15px;
-    outline: 1px solid #ececec;
-}
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  outline: 1px solid $header;
 
-.nav-header {
+  &__nav {
     display: flex;
     align-items: center;
-    gap: 93px;
-}
+    gap: 50px;
+  }
 
-.list-header {
+  &__studio {
+    font-family: $font-family;
+    color: $header-studio;
+  }
+
+  
+  &__web {
+    color: $header-web;
+  }
+
+  &__list {
     display: flex;
     gap: 50px;
-}
+    margin-left: 93px;
+  }
 
-.links-header {
-    margin-left: auto;
-}
-.links-header {
-    display: flex;
-    gap: 50px;
-}
-
-#header-link {
+  &__focus {
+    color: $header-focus;
     align-items: center;
     position: relative;
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-#header-link::after {
+  &__focus::after {
     content: "";
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #2196f3;
+    background-color: $header-focus-after;
     position: absolute;
     top: 51px;
     left: 0;
     opacity: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-#header-link:hover::after {
+  &__focus::after {
+    opacity: 0;
+  }
+
+  &__focus:hover::after {
     opacity: 1;
-}
+  }
 
-.link-other-list-header a {
-    color: grey;
-}
+  &__page {
+    color: $header-page;
+  }
 
-.logo-nav-header {
-    color: black;
-    font-family: "Raleway", sans-serif;
-}
+  &__address {
+    margin-left: auto;
+    display: flex;
+    gap: 50px;
+  }
 
-.color-logo {
-    color: #2196f3;
-}
-
-.link-ul-list-header {
-    font-weight: medium;
-    font-size: 14;
-}
-
-.address-header {
-    color: grey;
+  &__contacts {
+    color: $header-contacts;
     display: flex;
     align-items: center;
     gap: 10px;
     transition-property: fill, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.header-img {
+  &__contacts:hover .header__img {
+    fill: $header-contacts-hover1;
+  }
+
+  &__contacts:hover .header__img2 {
+    fill: $header-contacts-hover2;
+  }
+
+  &__img {
     width: 16px;
     height: 12px;
-    fill: grey;
+    fill: $header-img1;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.header-img2 {
+  &__img2 {
     width: 10px;
     height: 16px;
-    fill: grey;
+    fill: $header-img2;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.address-header:hover .header-img {
-    fill: #2196f3;
-}
+  & a {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.address-header:hover .header-img2 {
-    fill: #2196f3;
+  & a:hover {
+    color: $header-a;
+  }
 }
