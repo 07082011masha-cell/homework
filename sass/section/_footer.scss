@@ -3,7 +3,7 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #2f303a;
+    background-color: $footer-bg;
     
 
 &__container {
@@ -19,7 +19,7 @@
 
 
 &__studio {
-    color: white;
+    color: $bg;
     margin-bottom: 20px;
     font-size: 26px;
     font-family: $font-family2;
@@ -28,7 +28,7 @@
 
 
 &__web {
-    color: #2196f3;
+    color: $accent-color;
 }
 
 
@@ -36,14 +36,14 @@
 &__address {
     font-style: normal;
     font-size: 14px;
-    color: white;
+    color: $bg;
     margin-bottom: 9px;
 }
 
 
 
 &__contact {
-    color: grey;
+    color: $svg-color;
     font-size: 14px;
     display: flex;
     flex-direction: column;
@@ -68,7 +68,7 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #fff;
+    color: $bg;
     margin-bottom: 20px;
 }
 
@@ -90,8 +90,8 @@
 
 &__link {
     border-radius: 50%;
-    outline: 1px solid rgba(255, 255, 255, 10%);
-    background-color: rgba(255, 255, 255, 10%);
+    outline: 1px solid $footer-link;
+    background-color: $footer-link;
     width: 44px;
     height: 44px;
     gap: 10px;
@@ -107,8 +107,8 @@
 
 &__link:hover {
     border-radius: 50%;
-    outline: 1px solid #2196f3;
-    background-color: #2196f3;
+    outline: 1px solid $accent-color;
+    background-color: $accent-color;
     width: 44px;
     height: 44px;
 }
@@ -117,7 +117,7 @@
 &__icon {
     width: 20px;
     height: 20px;
-    fill: #ffffff;
+    fill: $bg;
 }
 
 
@@ -134,18 +134,18 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $bg;
     margin-bottom: 20px;
 }
 
 
 &__input {
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid $footer-input;
     border-radius: 4px;
     width: 358px;
     height: 50px;
     margin-right: 12px;
-    background-color: #2f303a;
+    background-color: $footer-bg;
 }
 
 
@@ -153,7 +153,7 @@
 &__button {
     width: 200px;
     height: 50px;
-    background-color: #2196f3;
+    background-color: $accent-color;
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
@@ -167,7 +167,7 @@
 
 
 &__button-icon {
-    fill: #fff;
+    fill: $bg;
     width: 24px;
     height: 24px;
     position: relative;

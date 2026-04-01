@@ -1,96 +1,41 @@
 $header: #ececec;
-$header-studio: black;
-$header-web: #2196f3;
-$header-focus: black;
-$header-focus-after: #2196f3;
-$header-page: black;
-$header-contacts: grey;
-$header-contacts-hover1: #2196f3;
-$header-contacts-hover2: #2196f3;
-$header-img1: grey;
-$header-img2: grey;
-$header-a: #2196f3;
-
 $hero-bg: linear-gradient(
   to right,
   rgba(47, 48, 58, 0.4),
   rgba(47, 48, 58, 0.4)
 );
-$hero-title: #f5f4fa;
-$hero-button-bg: #2196f3;
-$hero-button: #f5f4fa;
-
-$description-subtitle: grey;
-
-$do-subtitle: #fff;
-$do-subtitle-bg: rgba(47, 48, 58, 0.8);
-
-$team: #f5f4fa;
 $team-card-bg: rgb(255, 255, 255);
 $team-card-shadow:
   0 2px 1px 0 rgba(0, 0, 0, 0.2),
   0 1px 1px 0 rgba(0, 0, 0, 0.14),
   0 1px 3px 0 rgba(0, 0, 0, 0.12);
-$team-role: grey;
-$team-social-link-outline: #2196f3;
-$team-social-link-bg: #2196f3;
-$team-social-link-hover: #ffffff;
-$team-icon: #afb1b8;
-
-$client: #ffffff;
-$client-title: #212121;
-$client-link: #afb1b8;
-$client-link-hover: #2196f3;
-$client-link-hover-icon1: #2196f3;
-$client-link-hover-icon2: #2196f3;
-$client-link-hover-icon3: #2196f3;
-$client-link-hover-icon4: #2196f3;
-$client-link-hover-icon5: #2196f3;
-$client-link-hover-icon6: #2196f3;
-$client-icon1: #afb1b8;
-$client-icon2: #afb1b8;
-$client-icon3: #afb1b8;
-$client-icon4: #afb1b8;
-$client-icon5: #afb1b8;
-$client-icon6: #afb1b8;
-
-$menu-button-bg: #f5f4fa;
-$menu-button: black;
-$menu-button-hover-bg: #2196f3;
-$menu-button-hover: #f5f4fa;
 $menu-button-hover-shadow:
   0 2px 2px 0 rgba(0, 0, 0, 0.12),
   0 1px 2px 0 rgba(0, 0, 0, 0.08),
   0 3px 1px 0 rgba(0, 0, 0, 0.1);
-
-$portfolio-hover: #fff;
 $portfolio-hover-bg: rgb(33, 150, 255, 90%);
-$portfolio-title: black;
-$portfolio-subtitle: grey;
 $portfolio-item: #eeeeee;
-$portfolio-item-hover-outline: #eee;
 $portfolio-item-hover-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16),
         0 4px 4px 0 rgba(0, 0, 0, 0.06),
         0 1px 1px 0 rgba(0, 0, 0, 0.12);;
-
-$modal: #fff;
 $modal-close-outline:rgba(0, 0, 0, 0.1);
-$modal-close-bg: #ffffff;
-$modal-close-hover: #2196f3;
 $modal-close-icon: #000;
-$modal-title: #212121;
-$modal-field: #757575;
 $modal-input-outline: rgba(33, 33, 33, 0.2);
-$modal-input-hover-outline: #2196f3;
-$modal-input-hover-fill: #2196f3;
-$modal-icon: #212121;
 $modal-textarea-outline: rgba(33, 33, 33, 0.2);
 $modal-textarea: rgba(117, 117, 117, 0.5);;
 $modal-text: #757575;
-$modal-link: #2196f3;
-$modal-submit-bg: #2196f3;
-$modal-submit: #fff;
 $backdrop: #0c070879;
+$text-color: black;
+$accent-color: #2196f3;
+$svg-color: grey;
+$text-color2: #f5f4fa;
+$bg: #ffffff;
+$icon: #afb1b8;
+$modal:#212121;
+$footer-bg: #2F303A;
+$footer-link: rgba(255, 255, 255, 10%);
+$footer-input:rgba(255, 255, 255, 0.3);
+
 
 $font-family: "Roboto", sans-serif;
 $font-family2: "Raleway", sans-serif;

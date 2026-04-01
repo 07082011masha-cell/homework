@@ -22,7 +22,7 @@
   &__hover {
     font-size: 18px;
     font-weight: 400;
-    color: $portfolio-hover;
+    color: $bg;
     position: absolute;
     top: 0;
     left: 0;
@@ -43,7 +43,7 @@
   &__title {
     font-size: 18px;
     font-weight: bold;
-    color: $portfolio-title;
+    color: $text-color;
     padding-top: 20px;
     padding-bottom: 4px;
     margin-right: 24px;
@@ -54,7 +54,7 @@
 
   &__subtitle {
     font-size: 16px;
-    color: $portfolio-subtitle;
+    color: $svg-color;
     padding-bottom: 20px;
     margin-right: 24px;
     margin-left: 24px;
@@ -73,7 +73,7 @@
   }
 
   &__item:hover {
-    outline: 1px solid $portfolio-item-hover-outline;
+    outline: 1px solid $portfolio-item;
     box-shadow: $portfolio-item-hover-shadow;
   }
 

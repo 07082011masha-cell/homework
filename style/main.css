@@ -58,13 +58,13 @@ body {
 .header__list {
   display: flex;
   gap: 50px;
-  margin-left: 93px;
+  margin-left: 43px;
 }
 .header__focus {
   color: black;
   align-items: center;
   position: relative;
-  transition-property: opacity;
+  transition-property: opacity, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -80,14 +80,17 @@ body {
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__focus::after {
-  opacity: 0;
-}
 .header__focus:hover::after {
   opacity: 1;
 }
 .header__page {
   color: black;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__page:hover {
+  color: #2196f3;
 }
 .header__address {
   margin-left: auto;
@@ -124,14 +127,6 @@ body {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header a {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header a:hover {
-  color: #2196f3;
 }
 
 .hero {
@@ -433,7 +428,7 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2f303a;
+  background-color: #2F303A;
 }
 .footer__container {
   width: 100%;
@@ -446,7 +441,7 @@ body {
   align-items: baseline;
 }
 .footer__studio {
-  color: white;
+  color: #ffffff;
   margin-bottom: 20px;
   font-size: 26px;
   font-family: "Raleway", sans-serif;
@@ -457,7 +452,7 @@ body {
 .footer__address {
   font-style: normal;
   font-size: 14px;
-  color: white;
+  color: #ffffff;
   margin-bottom: 9px;
 }
 .footer__contact {
@@ -481,7 +476,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 .footer__socials {
@@ -534,7 +529,7 @@ body {
   width: 358px;
   height: 50px;
   margin-right: 12px;
-  background-color: #2f303a;
+  background-color: #2F303A;
 }
 .footer__button {
   width: 200px;
@@ -549,7 +544,7 @@ body {
   color: #fff;
 }
 .footer__button-icon {
-  fill: #fff;
+  fill: #ffffff;
   width: 24px;
   height: 24px;
   position: relative;
@@ -558,6 +553,7 @@ body {
 
 .modal {
   width: 528px;
+  background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
   top: 50%;
@@ -587,7 +583,7 @@ body {
 .modal__close:hover .modal__close-icon {
   fill: #2196f3;
 }
-.modal__close-icon {
+.modal__cross {
   width: 11px;
   height: 11px;
   fill: #000;
@@ -680,7 +676,7 @@ body {
   display: block;
   border-radius: 4px;
   background-color: #2196f3;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
@@ -753,7 +749,7 @@ body {
 .portfolio__hover {
   font-size: 18px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   position: absolute;
   top: 0;
   left: 0;
@@ -800,7 +796,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio__item:hover {
-  outline: 1px solid #eee;
+  outline: 1px solid #eeeeee;
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 .portfolio__item:hover .portfolio__hover {

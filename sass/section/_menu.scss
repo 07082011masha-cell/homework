@@ -18,8 +18,8 @@
   &__button {
     height: 38px;
     padding: 6px 22px;
-    background-color: $menu-button-bg;
-    color: $menu-button;
+    background-color: $text-color2;
+    color: $text-color;
     border-radius: 4px;
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
@@ -27,8 +27,8 @@
   }
 
   &__button:hover {
-    background-color: $menu-button-hover-bg;
-    color: $menu-button-hover;
+    background-color: $accent-color;
+    color: $text-color2;
     box-shadow: $menu-button-hover-shadow;
   }
 }
