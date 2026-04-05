@@ -1,4 +1,5 @@
 @use"../base/variables" as *;
+@use "../utils/mixin" as *;
 
 
 .portfolio {
@@ -34,9 +35,10 @@
     line-height: 156%;
     letter-spacing: 0.03em;
     box-sizing: border-box;
-    transition-property: opacity, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: opacity, transform;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     @include animation($property:(opacity, transform));
     transform: translateY(100%);
   }
 
@@ -67,9 +69,10 @@
     box-sizing: border-box;
     outline: 1px solid $portfolio-item;
     position: relative;
-    transition-property: outline, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: outline, box-shadow;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     @include animation($property:(outline, box-shadow));
   }
 
   &__item:hover {

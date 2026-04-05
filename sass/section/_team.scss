@@ -1,20 +1,20 @@
-@use"../base/variables" as *;
-
+@use "../base/variables" as *;
+@use "../utils/mixin" as *;
+@use "../utils/placeholder" as *;
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: $text-color2;
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+  @extend %indets-on-sections;
+  background-color: $text-color2;
 
-
-    &__title {
+  &__title {
     font-weight: bold;
     font-size: 36px;
     text-align: center;
-}
+  }
 
-
-&__list {
+  &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -22,99 +22,81 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-}
+  }
 
-
-
-&__card {
+  &__card {
     background-color: $team-card-bg;
     width: 270px;
     padding-bottom: 30px;
     text-align: center;
     border-radius: 4px;
     border-radius: 0 0 4px 4px;
-    box-shadow:
-        $team-card-shadow
-}
+    box-shadow: $team-card-shadow;
+  }
 
-
-&__image {
+  &__image {
     width: 100%;
     height: 260px;
     display: block;
-}
+  }
 
-
-
-&__name {
+  &__name {
     font-size: 16px;
     font-weight: medium;
     margin-top: 30px;
     margin-bottom: 10px;
-}
+  }
 
-
-&__role {
+  &__role {
     font-size: 16px;
     color: $svg-color;
-}
+  }
 
-
-&__socials {
+  &__socials {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 18px;
-}
+  }
 
-
-&__social-link {
+  &__social-link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
-    transition-property: background-color, outline, border-radius;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: background-color, outline, border-radius;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation(
+      $property: (
+        background-color,
+        outline,
+        border-radius,
+      )
+    );
     border-radius: 50%;
-}
+  }
 
-
-
-&__social-link:hover {
+  &__social-link:hover {
     border-radius: 50%;
     outline: 1px solid $accent-color;
     background-color: $accent-color;
     width: 44px;
     height: 44px;
-}
+  }
 
-
-
-
-&__social-link:hover .team__icon {
+  &__social-link:hover .team__icon {
     fill: $bg;
-}
+  }
 
-
-&__icon {
+  &__icon {
     width: 20px;
     height: 20px;
     fill: $icon;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: fill;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation();
+  }
 }
-
-
-}
-
-
-
-
-
-
-
-
-

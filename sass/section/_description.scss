@@ -1,9 +1,11 @@
 @use"../base/variables" as *;
+@use "../utils/placeholder" as *;
 
 
 .description {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+      @extend %indets-on-sections;
 
 
     &__list {

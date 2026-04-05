@@ -1,4 +1,6 @@
 @use "./base/variables" as *;
+@use "./utils/mixin" as *;
+@use "./utils/placeholder" as *;
 @use"./base/reset";
 @use"./base/container";
 @use"./base/common";

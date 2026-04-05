@@ -1,9 +1,12 @@
 @use"../base/variables" as *;
+@use "../utils/mixin" as *; 
+@use "../utils/placeholder" as *;
 
 
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  @extend %indets-on-sections;
   background-color: $bg;
 
   &__title {
@@ -28,9 +31,10 @@
     border-radius: 4px;
     width: 170px;
     height: 92px;
-    transition-property: outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: outline;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation ($property: outline);
   }
 
   &__link:hover {
@@ -65,53 +69,59 @@
     height: 46px;
     width: 41px;
     fill: $icon;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: fill;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation ();
   }
 
   &__icon2 {
     width: 40px;
     height: 52px;
     fill: $icon;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: fill;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     @include animation ();
   }
 
   &__icon3 {
     width: 44px;
     height: 42px;
     fill: $icon;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: fill;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     @include animation ();
   }
 
   &__icon4 {
     width: 84px;
     height: 40px;
     fill: $icon;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: fill;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     @include animation ();
   }
 
   &__icon5 {
     width: 63px;
     height: 46px;
     fill: $icon;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: fill;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     @include animation ();
   }
 
   &__icon6 {
     width: 94px;
     height: 44px;
     fill: $icon;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: fill;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     @include animation ();
   }
 }

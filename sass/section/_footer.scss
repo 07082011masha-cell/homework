@@ -1,4 +1,5 @@
 @use"../base/variables" as *;
+@use "../utils/mixin" as *;
 
 .footer {
     padding-top: 60px;
@@ -98,9 +99,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-property: border-radius, outline, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: border-radius, outline, background-color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     @include animation ($property: (border-radius, outline, background-color));
 }
 
 
