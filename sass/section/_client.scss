@@ -1,26 +1,52 @@
-@use"../base/variables" as *;
-@use "../utils/mixin" as *; 
+@use "../base/variables" as *;
+@use "../utils/mixin" as *;
 @use "../utils/placeholder" as *;
-
 
 .client {
   // padding-top: 94px;
   // padding-bottom: 94px;
   @extend %indets-on-sections;
   background-color: $bg;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 
   &__title {
-    font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
     color: $modal;
     margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
   }
 
   &__list {
     display: flex;
-    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
   }
 
   &__link {
@@ -29,12 +55,16 @@
     align-items: center;
     outline: 2px solid $icon;
     border-radius: 4px;
-    width: 170px;
+    width: 226px;
     height: 92px;
     // transition-property: outline;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @include animation ($property: outline);
+    @include animation($property: outline);
+
+     @media screen and (min-width: 1200px) {
+       width: 170px;
+    }
   }
 
   &__link:hover {
@@ -72,7 +102,7 @@
     // transition-property: fill;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @include animation ();
+    @include animation();
   }
 
   &__icon2 {
@@ -82,7 +112,7 @@
     // transition-property: fill;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation ();
+    @include animation();
   }
 
   &__icon3 {
@@ -92,7 +122,7 @@
     // transition-property: fill;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation ();
+    @include animation();
   }
 
   &__icon4 {
@@ -102,7 +132,7 @@
     // transition-property: fill;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation ();
+    @include animation();
   }
 
   &__icon5 {
@@ -112,7 +142,7 @@
     // transition-property: fill;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation ();
+    @include animation();
   }
 
   &__icon6 {
@@ -122,6 +152,6 @@
     // transition-property: fill;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation ();
+    @include animation();
   }
 }

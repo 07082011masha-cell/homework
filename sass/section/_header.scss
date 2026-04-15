@@ -2,20 +2,39 @@
 @use "../utils/mixin" as *;
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  padding-left: 15px;
+  padding: 10px 0;
   outline: 1px solid $header;
+
+  @media screen and (min-width: 768px) {
+    padding: 21px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0;
+  }
 
   &__nav {
     display: flex;
     align-items: center;
-    gap: 50px;
   }
 
+
+
+  
   &__studio {
-    font-family: $font-family;
+    font-family: $font-family2;
     color: $text-color;
+    margin-right: 276px;
+    font-size: 24px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 87px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+      font-size: 26px;
+    }
   }
 
   &__web {
@@ -23,9 +42,18 @@
   }
 
   &__list {
-    display: flex;
-    gap: 50px;
-    margin-left: 43px;
+    // margin-left: 43px;
+    display: none;
+
+ @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 50px;
+    }
   }
 
   &__focus {
@@ -35,7 +63,12 @@
     // transition-property: opacity, color;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @include animation($property:(opacity, color));
+    @include animation(
+      $property: (
+        opacity,
+        color,
+      )
+    );
   }
 
   &__focus::after {
@@ -49,7 +82,7 @@
     left: 0;
     opacity: 0;
     // transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation($property:opacity);
+    @include animation($property: opacity);
   }
 
   &__focus:hover::after {
@@ -61,7 +94,7 @@
     // transition-property: color;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation($property:color);
+    @include animation($property: color);
   }
 
   &__page:hover {
@@ -70,8 +103,18 @@
 
   &__address {
     margin-left: auto;
-    display: flex;
-    gap: 50px;
+    display: none;
+
+     @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+       flex-direction: row;
+      gap: 20px;
+    }
   }
 
   &__contacts {
@@ -82,7 +125,12 @@
     // transition-property: fill, color;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation($property:(fill, color));
+    @include animation(
+      $property: (
+        fill,
+        color,
+      )
+    );
   }
 
   &__contacts:hover .header__img {
@@ -100,7 +148,7 @@
     // transition-property: fill;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation();
+    @include animation();
   }
 
   &__img2 {
@@ -110,6 +158,6 @@
     // transition-property: fill;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation();
+    @include animation();
   }
 }

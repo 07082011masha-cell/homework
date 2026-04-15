@@ -1,6 +1,5 @@
-@use"../base/variables" as *;
+@use "../base/variables" as *;
 @use "../utils/mixin" as *;
-
 
 .menu {
   padding-top: 94px;
@@ -9,11 +8,20 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    column-gap: 8px;
+    row-gap: 15px;
     list-style: none;
-    justify-content: center;
+    // justify-content: center;
     align-content: flex-end;
     margin-bottom: 34px;
+    width: 326px;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      gap: 8px;
+    }
   }
 
   &__button {
@@ -25,7 +33,13 @@
     // transition-property: background-color, color, box-shadow;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation($property:(background-color, color, box-shadow));
+    @include animation(
+      $property: (
+        background-color,
+        color,
+        box-shadow,
+      )
+    );
   }
 
   &__button:hover {

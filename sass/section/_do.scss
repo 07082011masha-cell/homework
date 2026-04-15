@@ -2,8 +2,14 @@
 
 
 .do {
+  display: none;
   padding-bottom: 94px;
   gap: 30px;
+
+ @media screen and (min-width: 1200px) {
+    display: block;
+ }
+
 
   &__title {
     font-weight: bold;

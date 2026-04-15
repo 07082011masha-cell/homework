@@ -1,6 +1,5 @@
-@use"../base/variables" as *;
+@use "../base/variables" as *;
 @use "../utils/mixin" as *;
-
 
 .portfolio {
   padding-top: auto;
@@ -11,13 +10,24 @@
     flex-wrap: wrap;
     gap: 30px;
     list-style: none;
-    justify-content: center;
     align-content: flex-end;
+
+    @media screen and (min-width:1200px) {
+      justify-content: center;
+    }
   }
 
   &__wrapper {
     position: relative;
     overflow: hidden;
+    height: 294px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
   }
 
   &__hover {
@@ -38,7 +48,12 @@
     // transition-property: opacity, transform;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation($property:(opacity, transform));
+    @include animation(
+      $property: (
+        opacity,
+        transform,
+      )
+    );
     transform: translateY(100%);
   }
 
@@ -65,14 +80,34 @@
   }
 
   &__item {
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: 100%;
     box-sizing: border-box;
     outline: 1px solid $portfolio-item;
     position: relative;
     // transition-property: outline, box-shadow;
     // transition-duration: 250ms;
     // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-     @include animation($property:(outline, box-shadow));
+    @include animation(
+      $property: (
+        outline,
+        box-shadow,
+      )
+    );
+
+    // @media screen and (min-width: 768px) {
+    //   .portfolio__item:last-child {
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //   }
+    // }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
   }
 
   &__item:hover {
