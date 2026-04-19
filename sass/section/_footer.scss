@@ -7,12 +7,6 @@
   background-color: $footer-bg;
 
   &__container {
-    width: 100%;
-    max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -189,7 +183,8 @@
   &__input {
     border: 1px solid $footer-input;
     border-radius: 4px;
-    width: 450px;
+    width: 100%;
+  max-width: 450px;
     height: 50px;
     // margin-right: 12px;
     background-color: $footer-bg;
