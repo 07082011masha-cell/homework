@@ -5,14 +5,21 @@
   padding-top: auto;
   padding-bottom: 114px;
 
+  @media screen and (min-width: 480px) {
+    padding-top: 0;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     list-style: none;
-    align-content: flex-end;
+    // align-content: flex-end;
+    @media (max-width: 480px) {
+      gap: 15px;
+    }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width: 1200px) {
       justify-content: center;
     }
   }
@@ -100,6 +107,10 @@
     //     margin-right: auto;
     //   }
     // }
+
+    @media (max-width: 480px) {
+      flex-basis: 100%;
+    }
 
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 30px) / 2);
