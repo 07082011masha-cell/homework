@@ -79,6 +79,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: black;
   margin-right: auto;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.03em;
 }
 @media screen and (min-width: 768px) {
   .header__studio {
@@ -852,6 +855,11 @@ body {
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__caption {
+    text-align: left;
+  }
 }
 .footer__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
