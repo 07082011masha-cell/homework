@@ -35,6 +35,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../images/satellite.png");
+    background-color: $text-color2;
     @media screen and (min-width: 480px) {
       width: 450px;
     }

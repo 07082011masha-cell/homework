@@ -311,6 +311,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../images/satellite.png");
+  background-color: #f5f4fa;
 }
 @media screen and (min-width: 480px) {
   .description__item::before {
