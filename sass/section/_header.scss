@@ -48,6 +48,24 @@
     color: $accent-color;
   }
 
+  &__btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width:768px) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    width: 40px;
+    height: 40px;
+  }
+
   &__list {
     display: none;
     gap: 50px;
