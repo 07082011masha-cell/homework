@@ -24,11 +24,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-     <link rel="stylesheet" href="./style/main.min.css">
+    <link rel="stylesheet" href="./style/main.min.css" />
   </head>
   <body>
     <!-- info -->
-   <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="header__nav">
           <h1 class="header__studio">
@@ -115,7 +115,7 @@
     </header>
     <main>
       <!-- buttons -->
-       <section class="btns">
+      <section class="btns">
         <div class="container">
           <ul class="btns__list">
             <li class="btns__item">
@@ -135,167 +135,372 @@
             </li>
           </ul>
         </div>
-      </section>  
+      </section>
       <!-- images -->
-    <section class="portfolio">
+      <section class="portfolio">
         <div class="container">
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <div class="portfolio__wrapper">
-                <img
-                  class="portfolio__img"
-                  src="./images/img-with-people-in-a-pc.png"
-                  alt="people in a pc"
-                />
-              <p class="portfolio__hover">
-                Ресурс пропонує комплексні пропозиції з різним рівнем
-                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                вичерпні відомості про компанію чи приватну особу.
-              </p>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/laptop-desktop@1x.webp 1x,
+                      ./images/desktop/laptop-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/laptop-tablet@1x.webp 1x,
+                      ./images/tablet/laptop-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/laptop-mobile@1x.webp 1x,
+                      ./images/mobile/laptop-mobile@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/img-with-people-in-a-pc.png"
+                    alt="people in a pc"
+                  />
+                </picture>
+                <p class="portfolio__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <h2 class="portfolio__title">Технокряк</h2>
               <p class="portfolio__subtitle">Веб-сайт</p>
             </li>
             <li class="portfolio__item">
               <div class="portfolio__wrapper">
-                <img
-                  class="portfolio__img"
-                  src="./images/basketball-guys.png"
-                  alt="man are playing basketball"
-                />
-              <p class="portfolio__hover">
-                Ресурс пропонує комплексні пропозиції з різним рівнем
-                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                вичерпні відомості про компанію чи приватну особу.
-              </p>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/volleyball-desktop@1x.webp 1x,
+                      ./images/desktop/volleyball-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/volleyball-tablet@1x.webp 1x,
+                      ./images/tablet/volleyball-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/volleyball-mobile@1x.webp 1x,
+                      ./images/mobile/volleyball-mobile@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/basketball-guys.png"
+                    alt="man are playing basketball"
+                  />
+                </picture>
+                <p class="portfolio__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
-              <h2 class="portfolio__title">
-                Постер New Orlean vs Golden Star
-              </h2>
+              <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
               <p class="portfolio__subtitle">Дизайн</p>
             </li>
             <li class="portfolio__item">
               <div class="portfolio__wrapper">
-                <img
-                  class="portfolio__img"
-                  src="./images/seafood-fish-logo.png"
-                  alt="logo of the seafood restaurant"
-                />
-            
-              <p class="portfolio__hover">
-                Ресурс пропонує комплексні пропозиції з різним рівнем
-                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                вичерпні відомості про компанію чи приватну особу.
-              </p>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/seafood-desktop@1x.webp 1x,
+                      ./images/desktop/seafood-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/seafood-tablet@1x.webp 1x,
+                      ./images/tablet/seafood-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/seafood-mobile@1x.webp 1x,
+                      ./images/mobile/seafood-mobile@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/seafood-fish-logo.png"
+                    alt="logo of the seafood restaurant"
+                  />
+                </picture>
+
+                <p class="portfolio__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <h2 class="portfolio__title">Ресторан Seafood</h2>
               <p class="portfolio__subtitle">Додаток</p>
             </li>
             <li class="portfolio__item">
               <div class="portfolio__wrapper">
-                <img
-                  class="portfolio__img"
-                  src="./images/headphone.png"
-                  alt="image of a headphone"
-                />
-             
-              <p class="portfolio__hover">
-                Ресурс пропонує комплексні пропозиції з різним рівнем
-                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                вичерпні відомості про компанію чи приватну особу.
-              </p>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/headphone-destop@1x.webp 1x,
+                      ./images/desktop/headphone-destop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/headphone-tablet@1x.webp 1x,
+                      ./images/tablet/headphone-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/headphone-mobile@1x.webp 1x,
+                      ./images/mobile/headphone-mobile@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/headphone.png"
+                    alt="image of a headphone"
+                  />
+                </picture>
+
+                <p class="portfolio__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <h2 class="portfolio__title">Проєкт Prime</h2>
               <p class="portfolio__subtitle">Маркетинг</p>
             </li>
             <li class="portfolio__item">
               <div class="portfolio__wrapper">
-                <img
-                  class="portfolio__img"
-                  src="./images/img-of-two-boxes.png"
-                  alt="image of 2 boxes"
-                />
-             
-              <p class="portfolio__hover">
-                Ресурс пропонує комплексні пропозиції з різним рівнем
-                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                вичерпні відомості про компанію чи приватну особу.
-              </p>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/boxes-desktop@1x.webp 1x,
+                      ./images/desktop/boxes-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/boxes-tablet@1x.webp 1x,
+                      ./images/tablet/boxes-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/boxes-mobile@1x.webp 1x,
+                      ./images/mobile/boxes-mobile@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/img-of-two-boxes.png"
+                    alt="image of 2 boxes"
+                  />
+                </picture>
+
+                <p class="portfolio__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <h2 class="portfolio__title">Проєкт Boxes</h2>
               <p class="portfolio__subtitle">Додаток</p>
             </li>
             <li class="portfolio__item">
               <div class="portfolio__wrapper">
-                <img
-                  class="portfolio__img"
-                  src="./images/img-of-an-apple-pc.png"
-                  alt="image pf a pc"
-                />
-              
-              <p class="portfolio__hover">
-                Ресурс пропонує комплексні пропозиції з різним рівнем
-                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                вичерпні відомості про компанію чи приватну особу.
-              </p>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/pc-desktop@1x.webp 1x,
+                      ./images/desktop/pc-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/pc-tablet@1x.webp 1x,
+                      ./images/tablet/pc-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/pc-mobile@1x.webp 1x,
+                      ./images/mobile/pc-mobile@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/img-of-an-apple-pc.png"
+                    alt="image pf a pc"
+                  />
+                </picture>
+
+                <p class="portfolio__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <h2 class="portfolio__title">Inspiration has no Borders</h2>
               <p class="portfolio__subtitle">Веб-сайт</p>
             </li>
             <li class="portfolio__item">
               <div class="portfolio__wrapper">
-                <img
-                  class="portfolio__img"
-                  src="./images/img-of-a-fashionable-magazine.png"
-                  alt="image of an magazine"
-                />
-             
-              <p class="portfolio__hover">
-                Ресурс пропонує комплексні пропозиції з різним рівнем
-                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                вичерпні відомості про компанію чи приватну особу.
-              </p>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/book-desktop@1x.webp 1x,
+                      ./images/desktop/book-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/book-tablet@1x.webp 1x,
+                      ./images/tablet/book-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/book-mobile@1x.webp 1x,
+                      ./images/mobile/book-mobile@2x.webp 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="portfolio__img"
+                    src="./images/img-of-a-fashionable-magazine.png"
+                    alt="image of an magazine"
+                  />
+                </picture>
+
+                <p class="portfolio__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <h2 class="portfolio__title">Видання Limited Edition</h2>
               <p class="portfolio__subtitle">Дизайн</p>
             </li>
             <li class="portfolio__item">
               <div class="portfolio__wrapper">
+                              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/lab-desktop@1x.webp 1x,
+                    ./images/desktop/lab-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/lab-tablet@1x.webp 1x,
+                    ./images/tablet/lab-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/lab-mobile@1x.webp 1x,
+                    ./images/mobile/lab-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
                 <img
                   class="portfolio__img"
                   src="./images/img-of-a-label-tag.png"
                   alt="label tag"
                 />
-             
-              <p class="portfolio__hover">
-                Ресурс пропонує комплексні пропозиції з різним рівнем
-                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                вичерпні відомості про компанію чи приватну особу.
-              </p>
+                              </picture>
+
+                <p class="portfolio__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <h2 class="portfolio__title">Проєкт LAB</h2>
               <p class="portfolio__subtitle">Маркетинг</p>
             </li>
             <li class="portfolio__item">
               <div class="portfolio__wrapper">
+                              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/business-desktop@1x.webp 1x,
+                    ./images/desktop/business-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/business-tablet@1x.webp 1x,
+                    ./images/tablet/business-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/business-mobile@1x.webp 1x,
+                    ./images/mobile/business-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
                 <img
                   class="portfolio__img"
                   src="./images/img-of-a-business-laptop.png"
                   alt="man doing business in the laptop"
                 />
-              
-              <p class="portfolio__hover">
-                Ресурс пропонує комплексні пропозиції з різним рівнем
-                функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                вичерпні відомості про компанію чи приватну особу.
-              </p>
+                              </picture>
+
+                <p class="portfolio__hover">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
+                  вичерпні відомості про компанію чи приватну особу.
+                </p>
               </div>
               <h2 class="portfolio__title">Growing Business</h2>
               <p class="portfolio__subtitle">Додаток</p>
             </li>
           </ul>
         </div>
-      </section>   
+      </section>
     </main>
     <!-- footer -->
     <footer class="footer">
@@ -365,7 +570,7 @@
           </form>
         </div>
       </div>
-    </footer>  
-     <script type="module" src="./js/media.js"></script>
+    </footer>
+    <script type="module" src="./js/media.js"></script>
   </body>
 </html>

@@ -171,15 +171,40 @@
           <ul class="do__list">
             <li class="do__item">
               <p class="do__subtitle">Десктопні додатки</p>
-              <img class="do__img" src="./images/img.png" alt="img1" />
+              <img
+                class="do__img"
+                src="./images/desktop/do-desktop@1x.webp"
+                srcset="
+                  ./images/desktop/do-desktop@1x.webp 1x,
+                  ./images/desktop/do-desktop@2x.webp 2x
+                "
+                alt="img1"
+              />
             </li>
             <li class="do__item">
               <p class="do__subtitle">Мобільні додатки</p>
-              <img class="do__img" src="./images/img-1.png" alt="img2" />
+              <img
+                class="do__img"
+                src="./images/img-1.png"
+                srcset="
+                  ./images/desktop/monitor-desktop@1x.webp 1x,
+                  ./images/desktop/monitor-desktop@2x.webp 2x
+                "
+                alt="img2"
+              />
             </li>
             <li class="do__item">
               <p class="do__subtitle">Дизайнерські рішення</p>
-              <img class="do__img" src="./images/img-2.png" alt="img3" />
+
+              <img
+                class="do__img"
+                src="./images/img-2.png"
+                srcset="
+                  ./images/desktop/palette-desktop@1x.webp 1x,
+                  ./images/desktop/palette-desktop@2x.webp 2x
+                "
+                alt="img3"
+              />
             </li>
           </ul>
         </div>
@@ -190,7 +215,30 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
-              <img class="team__image" src="./images/man.jpg" alt="man" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/igor-desktop@1x.webp 1x,
+                    ./images/desktop/igor-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/igor-tablet@1x.webp 1x,
+                    ./images/tablet/igor-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/igor-mobile@1x.webp 1x,
+                    ./images/mobile/igor-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img class="team__image" src="./images/man.jpg" alt="man" />
+              </picture>
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__role">Product Designer</p>
               <ul class="team__socials">
@@ -225,7 +273,30 @@
               </ul>
             </li>
             <li class="team__card">
-              <img class="team__image" src="./images/woman.jpg" alt="woman" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/olga-desktop@1x.webp 1x,
+                    ./images/desktop/olga-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/olga-tablet@1x.webp 1x,
+                    ./images/tablet/olga-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/olga-mobile@1x.webp 1x,
+                    ./images/mobile/olga-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img class="team__image" src="./images/woman.jpg" alt="woman" />
+              </picture>
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__role">Frontend Developer</p>
               <ul class="team__socials">
@@ -260,7 +331,30 @@
               </ul>
             </li>
             <li class="team__card">
-              <img class="team__image" src="./images/man2.jpg" alt="man2" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/mycola-desktop@1x.webp 1x,
+                    ./images/desktop/mycola-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/mycola-tablet@1x.webp 1x,
+                    ./images/tablet/mycola-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mycola-mobile@1x.webp 1x,
+                    ./images/mobile/mycola-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img class="team__image" src="./images/man2.jpg" alt="man2" />
+              </picture>
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__role">Marketing</p>
               <ul class="team__socials">
@@ -295,7 +389,30 @@
               </ul>
             </li>
             <li class="team__card">
-              <img class="team__image" src="./images/man3.jpg" alt="man3" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/mihajlo-desktop@1x.webp 1x,
+                    ./images/desktop/mihajlo-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/tablet/myhajlo-tablet@1x.webp 1x,
+                    ./images/tablet/myhajlo-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mobile/mihajlo-mobile@1x.webp 1x,
+                    ./images/mobile/mihajlo-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img class="team__image" src="./images/man3.jpg" alt="man3" />
+              </picture>
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__role">UI Designer</p>
               <ul class="team__socials">

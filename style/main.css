@@ -328,17 +328,38 @@ body {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-head.png");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile@1x.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   overflow: hidden;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile@2x.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-tablet@1x.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-tablet@2x.webp);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hero-desktop@1x.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hero-desktop@2x.webp);
   }
 }
 
@@ -1016,7 +1037,7 @@ body {
 }
 
 .modal {
-  width: 528px;
+  width: 450px;
   background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
@@ -1028,6 +1049,11 @@ body {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 .modal__close {
   width: 30px;
@@ -1127,10 +1153,15 @@ body {
   height: 15px;
 }
 .modal__text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   color: #757575;
   margin-left: 9px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__text {
+    font-size: 14px;
+  }
 }
 .modal__link {
   color: #2196f3;

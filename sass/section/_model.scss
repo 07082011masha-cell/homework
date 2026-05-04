@@ -2,7 +2,7 @@
 @use "../utils/mixin" as *;
 
 .modal {
-  width: 528px;
+  width: 450px;
   background-color: $bg;
   border-radius: 4px;
   position: absolute;
@@ -15,6 +15,10 @@
   // transition-duration: 250ms;
   // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    @include animation($property:transform);
+
+   @media screen and (min-width:1200px) {
+    width: 528px;
+   }
 
   &__close {
     width: 30px;
@@ -129,10 +133,14 @@
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     color: $modal-text;
     margin-left: 9px;
+
+    @media screen and (min-width:1200px) {
+       font-size: 14px;
+    }
   }
 
   &__link {
